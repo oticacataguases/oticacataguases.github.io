@@ -1,0 +1,54 @@
+.calculator {
+    background-color: #3b4252; /* Darker grey for calculator */
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+#display {
+    font-size: 1.5em;
+    text-align: right;
+    padding: 0.5em;
+    border: 1px solid #434c5e; /* Lighter grey border */
+    border-radius: 4px;
+    background-color: #2e3440; /* Match body background */
+    color: #eceff4; /* Light text color */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 1em;
+    border: 1px solid #434c5e; /* Lighter grey border */
+    background-color: #4c566a; /* Button background */
+    color: #eceff4; /* Light text color */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3b4252; /* Darker button background on hover */
+}
+
+#toggleButton {
+    background-color: #4c566a; /* Match button color */
+    color: #eceff4; /* Light text color */
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+#toggleButton:hover {
+    background-color: #434c5e; /* Darker button background on hover */
+}
