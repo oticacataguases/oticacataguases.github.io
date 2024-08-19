@@ -89,8 +89,20 @@
         </section>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Ótica Cataguases. Todos os direitos reservados.</p>
+     <footer>
+        <p>&copy; <span id="current-year"></span> Ótica Cataguases. Todos os direitos reservados.</p>
+        <p>Este site está licenciado sob a <a href="link-para-a-licenca" target="_blank">Licença Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional</a>.</p>
     </footer>
+
+    <script>
+        // Função para atualizar o ano atual
+        function atualizarAno() {
+            var anoAtual = new Date().getFullYear();
+            document.getElementById('current-year').textContent = anoAtual;
+        }
+        
+        // Chama a função para atualizar o ano ao carregar a página
+        window.onload = atualizarAno;
+    </script>
 </body>
 </html>
