@@ -72,54 +72,13 @@ button:hover {
     <header>
         <div class="container">
             <h1>Ótica Cataguases</h1>
-            <p>Seu olhar, nossa missão.</p>
+            <p>Site em desenvolvimento</p>
         </div>
     </header>
 
-    <div class="container">
-        <section>
-            <h2>Sobre Nós</h2>
-            <p>Bem-vindo à Ótica Cataguases! Oferecemos uma ampla gama de óculos e lentes para atender a todas as suas necessidades visuais. Nossa missão é proporcionar a melhor visão com o máximo de conforto.</p>
-        </section>
-
-        <section class="form-container">
-            <h2>Contato</h2>
-            <form action="enviar-mensagem.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </section>
-    </div>
-    <button id="toggleButton">Mostrar Calculadora</button>
-    <div id="calculator" class="calculator" style="display: none;">
-        <input type="text" id="display" readonly>
-        <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="calculate()">=</button>
-        </div>
+    <<div class="container">
+        <!-- Botão Catálogo -->
+        <a href="catalogo.html" class="button">Catálogo</a>
     </div>
 
 
@@ -138,6 +97,6 @@ button:hover {
         // Chama a função para atualizar o ano ao carregar a página
         window.onload = atualizarAno;
     </script>
-    <script src="calc.js"></script>
+    <script src="calc.js"></script> // Chama a calculadora (mas espera, que calculadora?)
 </body>
 </html>
