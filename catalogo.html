@@ -1,143 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cátalogo de Lentes - Ótica Cataguases</title>
-    <style>
-        
-.catalogo {
-    padding: 2em;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.categoria {
-    margin-bottom: 2em;
-    padding: 1.5em;
-    background-color: #4c566a;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.categoria h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    color: #eceff4;
-    text-align: center;
-}
-
-.produto {
-    margin-bottom: 1.5em;
-    padding: 1.5em;
-    background-color: #3b4252;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.produto h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    color: #eceff4;
-}
-
-.produto p {
-    font-size: 1em;
-    color: #d8dee9;
-}
-
-.preco {
-    font-size: 1.3em;
-    color: #a3be8c; /* Destaque para o preço */
-    font-weight: bold;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2e3440; /* Frosty background color */
-    color: #d8dee9; /* Light text color */
-}
-
-header {
-    background-color: #3b4252; /* Darker grey for header */
-    color: #eceff4; /* Light grey text color */
-    padding: 1em 0;
-    text-align: center;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-footer {
-    background-color: #3b4252; /* Darker grey for footer */
-    color: #eceff4; /* Light grey text color */
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.form-container {
-    background-color: #3b4252; /* Darker grey for form container */
-    padding: 2em;
-    margin-top: 2em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.8em;
-    margin-top: 0.5em;
-    border: 1px solid #434c5e; /* Slightly lighter border */
-    border-radius: 4px;
-    background-color: #2e3440; /* Background to match body */
-    color: #eceff4; /* Light text color */
-}
-
-button {
-    background-color: #4c566a; /* Slightly lighter button background */
-    color: #eceff4; /* Light text color */
-    border: none;
-    padding: 1em;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #434c5e; /* Darker button background on hover */
-}
-    </style>
+    <title>Catálogo de Lentes - Ótica Cataguases</title>
+    <link rel="stylesheet" href="catstyle.css">
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>Catálogo</h1>
-            <h3>Lentes</h3>
-        </div>
+        <h1>Catálogo de Lentes</h1>
     </header>
 
-     <footer>
-        <p>&copy; <span id="current-year"></span> Ótica Cataguases. Todos os direitos reservados.</p>
-        <p>Licenciado sob a <a href="link-para-a-licenca" target="_blank">CC BY-NC-ND 4.0</a>.</p>
-    </footer>
+    <section class="lentes">
+        <h2>Visão Simples</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lentes</th>
+                    <th>Cil.</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Resina Incolor</td>
+                    <td>-2,00</td>
+                    <td>R$ 100,00</td>
+                    <td>Lentes básicas feitas de resina, ideais para uso diário. Comparadas com lentes de vidro, são mais leves e resistentes a impactos.</td>
+                </tr>
+                <tr>
+                    <td>Resina A.R</td>
+                    <td>-2,00</td>
+                    <td>R$ 120,00</td>
+                    <td>Lentes de resina com tratamento antirreflexo (A.R), que reduz o brilho e melhora o conforto visual. Semelhante à Resina Incolor, mas com o benefício adicional do antirreflexo.</td>
+                </tr>
+                <tr>
+                    <td>Orma Surf. (Antirrisco)</td>
+                    <td>-2,00</td>
+                    <td>R$ 200,00</td>
+                    <td>Lentes de resina Orma com revestimento antirrisco, ideal para quem precisa de uma lente durável e resistente. Comparada com a Resina A.R, tem maior resistência a arranhões.</td>
+                </tr>
+                <tr>
+                    <td>Resina Blue U.V</td>
+                    <td>-2,00</td>
+                    <td>R$ 170,00</td>
+                    <td>Lentes que bloqueiam a luz azul prejudicial emitida por telas digitais, além de proteger contra raios UV. Comparada com a Resina A.R, oferece proteção adicional contra luz azul.</td>
+                </tr>
+                <tr>
+                    <td>Poli Incolor</td>
+                    <td>-2,00</td>
+                    <td>R$ 150,00</td>
+                    <td>Lentes de policarbonato incolor, mais resistentes e leves do que a resina, ideais para crianças e atividades esportivas. Comparadas com Resina Incolor, são mais duráveis e leves.</td>
+                </tr>
+                <tr>
+                    <td>Poli A.R</td>
+                    <td>-2,00</td>
+                    <td>R$ 170,00</td>
+                    <td>Lentes de policarbonato com tratamento antirreflexo, combinando durabilidade com conforto visual. Comparada com Resina A.R, oferece maior resistência e leveza.</td>
+                </tr>
+                <tr>
+                    <td>Poli Blue U.V</td>
+                    <td>-2,00</td>
+                    <td>R$ 240,00</td>
+                    <td>Lentes de policarbonato que bloqueiam a luz azul e protegem contra raios UV. Comparada com Resina Blue U.V, oferece maior durabilidade e leveza.</td>
+                </tr>
+                <tr>
+                    <td>1.56 Photo A.R</td>
+                    <td>-2,00</td>
+                    <td>R$ 170,00</td>
+                    <td>Lentes fotossensíveis que escurecem ao sol, com tratamento antirreflexo. Ideal para quem busca conforto em ambientes internos e externos. Comparada com 1.56 Blue UV, oferece adaptação automática à luz.</td>
+                </tr>
+                <tr>
+                    <td>1.56 Blue UV</td>
+                    <td>-2,00</td>
+                    <td>R$ 170,00</td>
+                    <td>Lentes com proteção contra luz azul e raios UV, adequadas para uso prolongado em frente a telas. Comparada com Resina Blue U.V, tem melhor resistência a impactos.</td>
+                </tr>
+                <tr>
+                    <td>1.61 A.R</td>
+                    <td>-2,00</td>
+                    <td>R$ 200,00</td>
+                    <td>Lentes de alto índice com antirreflexo, mais finas e leves, ideais para graus mais elevados. Comparada com Resina A.R, é mais fina e estética.</td>
+                </tr>
+                <tr>
+                    <td>1.67 Blue U.V</td>
+                    <td>-2,00</td>
+                    <td>R$ 350,00</td>
+                    <td>Lentes de alto índice com proteção contra luz azul e UV, para quem busca lentes finas e tecnológicas. Comparada com 1.61 A.R, oferece proteção adicional contra luz azul.</td>
+                </tr>
+                <tr>
+                    <td>Orma Crizal Easy Pro Blue UV</td>
+                    <td>-2,00</td>
+                    <td>R$ 330,00</td>
+                    <td>Lentes de resina Orma com tratamento Crizal Easy Pro e proteção contra luz azul e UV, combinando durabilidade e tecnologia. Comparada com Resina Blue U.V, tem tratamento superior antirrisco e antirreflexo.</td>
+                </tr>
+                <tr>
+                    <td>Orma Crizal Rock Blue UV</td>
+                    <td>-2,00</td>
+                    <td>R$ 570,00</td>
+                    <td>Lentes de resina Orma com tratamento Crizal Rock, ultra resistente a arranhões, e proteção contra luz azul e UV. Comparada com Orma Crizal Easy Pro, oferece maior resistência.</td>
+                </tr>
+                <tr>
+                    <td>Orma Crizal Sapphire Blue UV</td>
+                    <td>-2,00</td>
+                    <td>R$ 660,00</td>
+                    <td>Lentes de resina Orma com tratamento Crizal Sapphire, que oferece a mais avançada proteção contra reflexos, arranhões, luz azul e UV. Comparada com Orma Crizal Rock, tem melhor desempenho em eliminar reflexos.</td>
+                </tr>
+                <tr>
+                    <td>Orma Trans. Blue U.V</td>
+                    <td>-2,00</td>
+                    <td>R$ 420,00</td>
+                    <td>Lentes fotossensíveis de resina Orma que bloqueiam luz azul e UV. Ideal para quem deseja uma solução completa para ambientes internos e externos. Comparada com Orma Crizal Easy Pro, oferece adaptação à luz.</td>
+                </tr>
+                <tr>
+                    <td>Orma Trans. Crizal Easy</td>
+                    <td>-2,00</td>
+                    <td>R$ 690,00</td>
+                    <td>Lentes fotossensíveis com tratamento Crizal Easy, protegendo contra reflexos, arranhões e luz azul/UV. Comparada com Orma Trans. Blue U.V, oferece melhor resistência a arranhões.</td>
+                </tr>
+                <tr>
+                    <td>Orma Trans. Crizal Sapphire</td>
+                    <td>-2,00</td>
+                    <td>R$ 1.000,00</td>
+                    <td>Lentes fotossensíveis com o mais avançado tratamento Crizal Sapphire, combinando todas as proteções necessárias com adaptação automática à luz. Comparada com Orma Trans. Crizal Easy, oferece a melhor experiência antirreflexo.</td>
+                </tr>
+                <tr>
+                    <td>Poli Crizal Easy Pro Blue UV</td>
+                    <td>-2,00</td>
+                    <td>R$ 530,00</td>
+                    <td>Lentes de policarbonato com tratamento Crizal Easy Pro, protegendo contra luz azul, UV e arranhões. Comparada com Orma Crizal Easy Pro Blue UV, é mais leve e resistente.</td>
+                </tr>
+                <tr>
+                    <td>Poli Crizal Rock Blue UV</td>
+                    <td>-2,00</td>
+                    <td>R$ 700,00</td>
+                    <td>Lentes de policarbonato com tratamento Crizal Rock, ultra resistente, protegendo contra luz azul e UV. Comparada com Poli Crizal Easy Pro Blue UV, oferece maior resistência a impactos e arranhões.</td>
+                </tr>
+                <tr>
+                    <td>Poli Crizal Sapphire Blue UV</td>
+                    <td>-2,00</td>
+                    <td>R$ 870,00</td>
+                    <td>L adaptadas para mudanças de iluminação, com adaptação automática. Comparada com Mult. Espace Resina, tem maior flexibilidade em ambientes variados.</td>
+                </tr>
+                <tr>
+                    <td>Mult. Espace Resina A.R (Acclimates)</td>
+                    <td>DSAO</td>
+                    <td>R$ 710,00</td>
+                    <td>Multifocais de resina adaptadas para mudanças de iluminação com tratamento antirreflexo. Comparada com Mult. Espace Resina (Acclimates), adiciona o benefício do tratamento antirreflexo.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <script>
-        // Função para atualizar o ano atual
-        function atualizarAno() {
-            var anoAtual = new Date().getFullYear();
-            document.getElementById('current-year').textContent = anoAtual;
-        }
-        
-        // Chama a função para atualizar o ano ao carregar a página
-        window.onload = atualizarAno;
-    </script>
-    <script src="calc.js"></script>
+    <footer>
+        <p>&copy; 2024 Ótica Cataguases. Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>
