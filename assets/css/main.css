@@ -19,6 +19,15 @@ header {
     overflow: hidden;
 }
 
+footer a {
+    color: white; /* Define a cor branca para os links no footer */
+    text-decoration: none; /* Remove o sublinhado por padrão */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
 footer {
     background-color: #004aad; /* Mantém a cor do header */
     color: #ffffff; /* Texto branco */
