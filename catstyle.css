@@ -16,6 +16,7 @@ header {
 
 h1 {
     margin: 0;
+    font-size: 8vw; /* O tamanho da fonte será 8% da largura da viewport */
 }
 
 .lentes {
