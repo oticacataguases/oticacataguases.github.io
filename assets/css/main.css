@@ -13,6 +13,11 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 8vw; /* O tamanho da fonte será 8% da largura da viewport */
+}
+
+
 .container {
     width: 80%;
     margin: 0 auto;
