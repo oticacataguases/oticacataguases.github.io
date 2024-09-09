@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo neutra e clara */
+    color: #333; /* Cor do texto escuro */
+}
+
+header {
+    background-color: #004aad; /* Azul inspirado na identidade visual de óticas */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 1em 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #004aad; /* Mantém a cor do header */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.form-container {
+    background-color: #ffffff; /* Fundo branco para contraste */
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid #cccccc; /* Bordas suaves */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Fundo levemente claro */
+    color: #333; /* Texto escuro */
+}
+
+/* Estilo do botão inspirado no tema da ótica */
+.catalog-button {
+    display: inline-block;
+    background-color: #004aad; /* Cor azul para o botão */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 1.2em 2em;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 2em auto;
+    width: 100%;
+    max-width: 320px;
+}
+
+.catalog-button:hover {
+    background-color: #003c8f; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-3px);
+}
+
+div.container h1{
+    font-weight: bold;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .catalog-button {
+        width: 100%;
+    }
+}
