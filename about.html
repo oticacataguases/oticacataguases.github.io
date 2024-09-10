@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre - Ótica Cataguases</title>
+    <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        
 .catalogo {
     padding: 2em;
     margin: 0 auto;
@@ -15,7 +15,7 @@
 .categoria {
     margin-bottom: 2em;
     padding: 1.5em;
-    background-color: #4c566a;
+    background-color: #004aad; /* Azul inspirado na identidade visual de óticas */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -23,14 +23,14 @@
 .categoria h2 {
     font-size: 1.5em;
     margin-bottom: 1em;
-    color: #eceff4;
+    color: #ffffff; /* Texto branco para contraste */
     text-align: center;
 }
 
 .produto {
     margin-bottom: 1.5em;
     padding: 1.5em;
-    background-color: #3b4252;
+    background-color: #f9f9f9; /* Fundo levemente claro */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -38,12 +38,12 @@
 .produto h3 {
     font-size: 1.2em;
     margin-bottom: 0.5em;
-    color: #eceff4;
+    color: #004aad; /* Azul para os títulos dos produtos */
 }
 
 .produto p {
     font-size: 1em;
-    color: #d8dee9;
+    color: #333; /* Cor de texto escura */
 }
 
 .preco {
@@ -52,66 +52,58 @@
     font-weight: bold;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2e3440; /* Frosty background color */
-    color: #d8dee9; /* Light text color */
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .catalogo {
+        padding: 1em;
+    }
+
+    .categoria {
+        padding: 1em;
+    }
+
+    .categoria h2 {
+        font-size: 1.3em;
+    }
+
+    .produto {
+        padding: 1em;
+    }
+
+    .produto h3 {
+        font-size: 1.1em;
+    }
+
+    .preco {
+        font-size: 1.2em;
+    }
 }
 
-header {
-    background-color: #3b4252; /* Darker grey for header */
-    color: #eceff4; /* Light grey text color */
-    padding: 1em 0;
-    text-align: center;
-}
+/* Responsividade para dispositivos muito pequenos (telefones menores) */
+@media (max-width: 480px) {
+    .catalogo {
+        padding: 0.5em;
+    }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
+    .categoria {
+        padding: 0.8em;
+    }
 
-footer {
-    background-color: #3b4252; /* Darker grey for footer */
-    color: #eceff4; /* Light grey text color */
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    .categoria h2 {
+        font-size: 1.1em;
+    }
 
-.form-container {
-    background-color: #3b4252; /* Darker grey for form container */
-    padding: 2em;
-    margin-top: 2em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+    .produto {
+        padding: 0.8em;
+    }
 
-input, textarea {
-    width: 100%;
-    padding: 0.8em;
-    margin-top: 0.5em;
-    border: 1px solid #434c5e; /* Slightly lighter border */
-    border-radius: 4px;
-    background-color: #2e3440; /* Background to match body */
-    color: #eceff4; /* Light text color */
-}
+    .produto h3 {
+        font-size: 1em;
+    }
 
-button {
-    background-color: #4c566a; /* Slightly lighter button background */
-    color: #eceff4; /* Light text color */
-    border: none;
-    padding: 1em;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #434c5e; /* Darker button background on hover */
+    .preco {
+        font-size: 1.1em;
+    }
 }
     </style>
 </head>
