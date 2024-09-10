@@ -1,0 +1,39 @@
+/* print.css */
+
+/* Ocultar elementos não necessários para impressão */
+.header, .footer, .sidebar, .navigation {
+  display: none;
+}
+
+/* Ajustar o layout para impressão */
+body {
+  font-size: 12pt; /* Ajustar o tamanho da fonte para legibilidade */
+  color: #000; /* Garantir que o texto esteja em preto */
+  background: none; /* Remover o fundo */
+}
+
+/* Definir margens para impressão */
+@page {
+  margin: 1in;
+}
+
+/* Ajustar imagens para não serem muito grandes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Garantir que tabelas se ajustem à página */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Ajustar o layout para conteúdo específico */
+.content {
+  page-break-before: always; /* Adicionar quebras de página antes de certos elementos, se necessário */
+}
+/* Adicionar quebra de página antes de certos elementos */
+.page-break {
+  page-break-before: always;
+}
