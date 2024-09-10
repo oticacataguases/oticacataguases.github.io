@@ -93,6 +93,40 @@ td {
         white-space: nowrap;
     }
 }
+    footer {
+    background-color: #004aad; /* Mantém a cor do header */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 0.5em 0; /* Reduzindo o padding para compactar o footer */
+    font-size: 0.9em; /* Tamanho da fonte menor */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white; /* Cor branca para links no footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Ajustes de responsividade no footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 0.4em 0; /* Footer ainda mais compacto em dispositivos móveis */
+        font-size: 0.8em; /* Fonte um pouco menor */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 0.3em 0; /* Footer bem compacto para celulares pequenos */
+        font-size: 0.7em; /* Fonte menor para economizar espaço */
+    }
+}
     </style>
 </head>
 
