@@ -5,7 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Lentes - Ótica Cataguases</title>
-    <link rel="stylesheet" href="catstyle.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .lentes {
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+h2 {
+    border-bottom: 2px solid #004aad; /* Azul da ótica */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #004aad; /* Título em azul */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #004aad; /* Azul inspirado na identidade visual de óticas */
+    color: #ffffff; /* Texto branco para contraste */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fundo levemente claro para linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Fundo branco para linhas ímpares */
+}
+
+td {
+    color: #333; /* Cor do texto para células */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .lentes {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px; /* Tamanho da fonte menor em dispositivos móveis */
+    }
+
+    th, td {
+        padding: 6px; /* Reduzindo o padding para economizar espaço */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Redução no tamanho do título */
+    }
+}
+
+/* Responsividade para telas muito pequenas (celulares pequenos) */
+@media (max-width: 480px) {
+    .lentes {
+        padding: 5px;
+    }
+
+    table {
+        font-size: 12px; /* Fonte ainda menor para celulares pequenos */
+    }
+
+    th, td {
+        padding: 4px; /* Padding reduzido para caber melhor em telas pequenas */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Título mais compacto em celulares pequenos */
+    }
+
+    /* Ajuste para rolagem horizontal, se necessário */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+    </style>
 </head>
 
 <body>
