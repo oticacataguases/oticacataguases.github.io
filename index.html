@@ -34,13 +34,45 @@
 .search-container button:hover {
     background-color: #003c8f;
 }
+        /* Container para os botões */
+        .button-container {
+            display: flex;
+            justify-content: center; /* Alinha os itens no centro horizontalmente */
+            gap: 1em; /* Espaçamento entre os botões */
+            padding: 1em;
+        }
+
+        /* Estilo do botão */
+        .catalog-button {
+            display: inline-block;
+            background-color: #004aad; /* Azul para o botão */
+            color: #ffffff; /* Texto branco */
+            text-align: center;
+            padding: 1.2em 2em;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .catalog-button:hover {
+            background-color: #003c8f; /* Azul mais escuro ao passar o mouse */
+            transform: translateY(-3px);
+        }
+
+        /* Ajuste para margens e espaçamentos */
+        .container {
+            margin: 0;
+            padding: 0;
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Ótica Cataguases</h1>
-            <p>Site em desenvolvimento por <autor>José Guilherme</autor></p>
         </div>
     </header>
 
@@ -53,21 +85,22 @@
         </form>
     </div>
 
+    <div class="container">
     <!-- Botão Catálogo -->
-    <a href="catalogo.html" class="catalog-button">Catálogo</a>
+    <a href="/catalogo/" class="catalog-button">Catálogo</a>
     </div>
     
     </br>
     
     <div class="container">
     <!-- Botão Sobre -->
-    <a href="about.html" class="catalog-button">Sobre</a>
+    <a href="/about/" class="catalog-button">Sobre</a>
     </div>
 
 
      <footer>
         <p>&copy; <span id="current-year"></span> Ótica Cataguases. Todos os direitos reservados.</p>
-        <p>Licenciado sob a <a href="link-para-a-licenca" target="_blank">CC BY-NC-ND 4.0</a>.</p>
+        <p>Licenciado sob a <a href="https://raw.githubusercontent.com/oticacataguases/oticacataguases.github.io/main/LICENSE" target="_blank">BSD 3-Clause License</a>.</p>
     </footer>
 
     <script>
