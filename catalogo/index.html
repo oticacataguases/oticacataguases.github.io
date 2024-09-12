@@ -134,13 +134,13 @@ footer a:hover {
 <body>
     <header>
         <h1>Catálogo de Lentes</h1>
-        <p id="dateTime">Última modificação em: </p>
+        <p id="dateTime">Última modificação: </p>
     </header>
         <script>
         function updateDateTime() {
             const now = new Date();
             const formattedDate = now.toLocaleString('pt-BR');
-            document.getElementById('dateTime').textContent = `Última modificação em: ${formattedDate}`;
+            document.getElementById('dateTime').textContent = `Última modificação: ${formattedDate}`;
         }
 
         updateDateTime();
