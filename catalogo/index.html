@@ -128,6 +128,25 @@ footer a:hover {
         font-size: 0.7em; /* Fonte menor para economizar espaço */
     }
 }
+        /* Estilos dos botões */
+        .nav-buttons {
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
@@ -146,6 +165,12 @@ footer a:hover {
         updateDateTime();
         setInterval(updateDateTime, 1000);
     </script>
+
+    <nav class="nav-buttons">
+        <button onclick="location.href='#vs'">Visão Simples</button>
+        <button onclick="location.href='#mp'">Multifocal Pronta</button>
+        <button onclick="location.href='#ms'">Multifocal Surfaçada</button>
+    </nav>
 
     <section class="lentes">
         <!-- Lentes de contato (ainda não trabalhamos com elas
@@ -181,7 +206,7 @@ footer a:hover {
             </tbody>
         </table>
         -->
-        <h2>Visão Simples</h2>
+        <h2 id="vs">Visão Simples</h2>
         <table>
             <thead>
                 <tr>
@@ -381,7 +406,7 @@ footer a:hover {
             </tbody>
         </table>
 
-        <h2>Multifoicais Prontas (Progressivas)</h2>
+        <h2 id="mp">Multifoicais Prontas (Progressivas)</h2>
         <table>
             <thead>
                 <tr>
@@ -417,7 +442,7 @@ footer a:hover {
             </tbody>
         </table>
 
-        <h2>Multifoicais Surf. (Lentes de Prescrição)</h2>
+        <h2 id="ms">Multifoicais Surf. (Lentes de Prescrição)</h2>
         <table>
             <thead>
                 <tr>
