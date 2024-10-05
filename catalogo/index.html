@@ -171,13 +171,16 @@ footer a:hover {
             padding: 20px;
             margin: 10px 0;
         }
+        .invisible {
+            opacity: 0;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Catálogo de Lentes</h1>
-        <p id="dateTime">Última modificação: </p>
+        <p id="dateTime" class="invisible">Última modificação: </p>
     </header>
         <script>
         function updateDateTime() {
